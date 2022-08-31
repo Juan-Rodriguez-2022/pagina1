@@ -1,0 +1,20 @@
+<DOCTYPE HTML>
+    <h1>Hola mundo</h1>
+    
+nombre : saludos
+
+en : [pull_request_target, problemas]
+
+trabajos :
+  saludo :
+    se ejecuta en : ubuntu-latest
+    permisos :
+      problemas : escribir
+      solicitudes de extracción : escribir
+    pasos :
+    - usos : acciones/primera-interacción@v1
+      con :
+        token de repositorio : ${{ secrets.GITHUB_TOKEN }}
+        mensaje-problema : " Mensaje que se mostrará en el primer problema de los usuarios "
+        pr-message : " Mensaje que se mostrará en la primera solicitud de extracción de los usuarios "
+</DOCTYPE>
